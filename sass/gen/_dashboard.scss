@@ -28,8 +28,8 @@
 
     img {
       color: #fff;
-      width: 5rem;
-      height: 5rem;
+      width: 10rem;
+      height: 10rem;
     }
 
     &--value {
@@ -40,10 +40,18 @@
   &__temp {
     &--value {
       font: 500 45rem "Bespoke Stencil", san-serif;
-    }
+      position: relative;
 
-    &--icon {
-      font-size: 10rem;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 30%;
+        right: -14%;
+        width: 5rem;
+        height: 5rem;
+        border: 2rem solid #fff;
+        border-radius: 50%;
+      }
     }
   }
 }

@@ -43,7 +43,8 @@ input:focus {
 .form {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 200; }
   .form input {
     width: 40%;
     border-radius: 5rem;
@@ -72,14 +73,22 @@ input:focus {
     align-items: center; }
     .condition__status img {
       color: #fff;
-      width: 5rem;
-      height: 5rem; }
+      width: 10rem;
+      height: 10rem; }
     .condition__status--value {
       font-size: 3rem; }
   .condition__temp--value {
-    font: 500 45rem "Bespoke Stencil", san-serif; }
-  .condition__temp--icon {
-    font-size: 10rem; }
+    font: 500 45rem "Bespoke Stencil", san-serif;
+    position: relative; }
+    .condition__temp--value::after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      right: -14%;
+      width: 5rem;
+      height: 5rem;
+      border: 2rem solid #fff;
+      border-radius: 50%; }
 
 .forecast {
   width: 100%;
