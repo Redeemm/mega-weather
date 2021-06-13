@@ -15,12 +15,12 @@ class forecast {
 
     sendRequest()
       .then((data) => {
-        // console.log(data);
         this.updateWeather(data);
         this.fetchDailyForecast(data.coord.lat, data.coord.lon);
       })
       .catch((err) => {
-        alert("No Internet Connection");
+        // alert("No Internet Connection");
+        console.log(err);
       });
 
     return this;
@@ -100,6 +100,13 @@ class forecast {
         "src",
         `http://openweathermap.org/img/w/${data.daily[index].weather[0].icon}.png`
       );
+
+      const now = new Date();
+      const day = now.getDate();
+      const newDate = now.setDate(day + (index + 1));
+      const newNow = new Date(newDate);
+
+      dayDate[index].innerHTML = dateConvertor(newNow);
     };
 
     for (let i = 0; i < 5; i++) {

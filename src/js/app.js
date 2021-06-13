@@ -1,11 +1,11 @@
 //importing date functions
 const form = document.querySelector("form");
 
-const dateConvertor = () => {
-  const weekday = new Date().getDay();
-  const dayNo = new Date().getDate();
-  const month = new Date().getMonth();
-  const year = new Date().getFullYear();
+const dateConvertor = (newNow = new Date()) => {
+  const weekday = newNow.getDay();
+  const dayNo = newNow.getDate();
+  const month = newNow.getMonth();
+  const year = newNow.getFullYear();
 
   const months = [
     "January",
@@ -34,10 +34,10 @@ const dateConvertor = () => {
 
   const date = `${day[weekday]}, ${dayNo} ${months[month]}, ${year}`;
 
-  document.querySelector(".city__date--value").innerHTML = date;
+  return date;
 };
 
-dateConvertor();
+document.querySelector(".city__date--value").innerHTML = dateConvertor();
 
 form.addEventListener("submit", (e) => {
   //preventing default loading
