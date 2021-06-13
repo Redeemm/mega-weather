@@ -1,8 +1,12 @@
 .form {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   z-index: 200;
+
+  &__title {
+    font-size: 3rem;
+  }
 
   input {
     width: 40%;
