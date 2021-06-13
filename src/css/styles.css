@@ -52,7 +52,7 @@ input:focus {
   align-items: center;
   z-index: 200; }
   .form__title {
-    font-size: 3rem; }
+    font: 300 3rem "Bespoke Stencil", san-serif; }
   .form input {
     width: 40%;
     border-radius: 5rem;
