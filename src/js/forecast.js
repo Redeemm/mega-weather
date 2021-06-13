@@ -101,7 +101,7 @@ class forecast {
       settingForecast(i);
     }
 
-    // console.log(data.daily);
+    document.querySelector(".hide").style.display = "grid";
   }
 
   storeData(city) {
