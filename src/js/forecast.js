@@ -80,6 +80,7 @@ class forecast {
   updateDailyForecast(data) {
     const days = [];
     const daysIcon = [];
+    const dayDate = [];
 
     document.querySelectorAll(".forecast__day--status").forEach((list) => {
       days.push(list);
@@ -87,6 +88,10 @@ class forecast {
 
     document.querySelectorAll(".forecast__day--icon").forEach((list) => {
       daysIcon.push(list);
+    });
+
+    document.querySelectorAll(".forecast__day--date").forEach((list) => {
+      dayDate.push(list);
     });
 
     const settingForecast = (index) => {

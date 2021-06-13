@@ -1,3 +1,4 @@
+//importing date functions
 const form = document.querySelector("form");
 
 const dateConvertor = () => {
@@ -43,8 +44,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   //creating a new class object instance
-  const forecaster = new forecast(e.target.firstElementChild.value);
-  //   console.log(Array(e.target));
+  const forecaster = new forecast(e.target.lastElementChild.value);
 
   //making the API fetch request
   forecaster.fetchWeather();
@@ -56,7 +56,6 @@ form.addEventListener("submit", (e) => {
 const storage = () => {
   const city = localStorage.getItem("city");
   city ? new forecast(city).fetchWeather() : "";
-  console.log("storage run");
 };
 
 storage();

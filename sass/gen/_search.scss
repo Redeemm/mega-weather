@@ -3,13 +3,14 @@
   justify-content: space-evenly;
   align-items: center;
   z-index: 200;
+  width: 75%;
 
   &__title {
     font: 500 3rem "Bespoke Stencil", san-serif;
   }
 
   input {
-    width: 40%;
+    width: 50%;
     border-radius: 5rem;
     color: #333;
     border: 1px solid transparent;
