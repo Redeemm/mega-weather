@@ -1,0 +1,71 @@
+.city {
+  height: fit-content;
+  margin-top: 10rem;
+
+  &__location {
+    &--name {
+      font: 500 10rem "Bespoke Stencil", san-serif;
+    }
+  }
+
+  &__date {
+    &--value {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+
+  &__status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      color: #fff;
+      width: 5rem;
+      height: 5rem;
+    }
+
+    &--value {
+      font-size: 3rem;
+    }
+  }
+
+  &__temp {
+    &--value {
+      font: 500 45rem "Bespoke Stencil", san-serif;
+    }
+
+    &--icon {
+      font-size: 10rem;
+    }
+  }
+}
+
+.forecast {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  &__day {
+    border: 1px solid #fff;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 30% 70%;
+
+    &--date {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}

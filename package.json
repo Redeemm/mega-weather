@@ -1,0 +1,16 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "An app to show the weather",
+  "main": "app.js",
+  "scripts": {
+    "server": "live-server",
+    "write": "node-sass ./sass/main.scss ./src/css/styles.css -w"
+  },
+  "author": "Redeemer",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.0"
+  }
+}

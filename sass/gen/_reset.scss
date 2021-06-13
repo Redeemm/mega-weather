@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font: 300 1.8rem "Pally", sans-serif;
+  color: #fff;
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+.app {
+  display: grid;
+  grid-template-rows: 10vh 55vh 10vh 25vh;
+
+  &-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15rem;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/css?f[]=bespoke-stencil@300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/css?f[]=pally@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main class="app">
+      <form class="form">
+        <input
+          type="search"
+          name="city"
+          id="city"
+          placeholder="Search for any city..."
+          class="form__search"
+        />
+      </form>
+      <div class="app-container">
+        <div class="city">
+          <div class="city__location">
+            <h1 class="city__location--name">ACCRA</h1>
+          </div>
+          <div class="city__date">
+            <span class="city__date--value">Sunday, 12th June, 2021</span>
+          </div>
+        </div>
+        <div class="condition">
+          <div class="condition__status">
+            <img
+              src="./src/img/icons/1.svg"
+              alt="Icons"
+              class="condition__status--icon"
+            />
+            <span class="condition__status--value">Sunny</span>
+          </div>
+          <div class="condition__temp">
+            <span class="condition__temp--value">27</span>
+            <span class="condition__temp--icon">C</span>
+          </div>
+        </div>
+      </div>
+      <div class="others">
+        <div class="others__condition">
+          <span>Humidity</span> : <span>60%</span>
+        </div>
+        <div class="others__condition">
+          <span>Wind Speed</span> : <span>4.7MPG</span>
+        </div>
+        <div class="others__condition">
+          <span>UV Index</span> : <span>11.82</span>
+        </div>
+      </div>
+      <div class="forecast">
+        <div class="forecast__day">
+          <div class="forecast__day--date">Sunday, 13th June, 2021</div>
+          <div class="condition__status">
+            <img src="./src/img/icons/1.svg" alt="Icons" />
+            <span class="condition__status--value">Sunny</span>
+          </div>
+        </div>
+        <div class="forecast__day">
+          <div class="forecast__day--date">Monday, 14th June, 2021</div>
+          <div class="condition__status">
+            <img src="./src/img/icons/4.svg" alt="Icons" />
+            <span class="condition__status--value">Partly Cloudy</span>
+          </div>
+        </div>
+        <div class="forecast__day">
+          <div class="forecast__day--date">Tuesday, 15th June, 2021</div>
+          <div class="condition__status">
+            <img src="./src/img/icons/13.svg" alt="Icons" />
+            <span class="condition__status--value">Heavy Rain</span>
+          </div>
+        </div>
+        <div class="forecast__day">
+          <div class="forecast__day--date">Wednesday, 16th June, 2021</div>
+          <div class="condition__status">
+            <img src="./src/img/icons/6.svg" alt="Icons" />
+            <span class="condition__status--value">Cloudy</span>
+          </div>
+        </div>
+        <div class="forecast__day">
+          <div class="forecast__day--date">Thursay, 17th June, 2021</div>
+          <div class="condition__status">
+            <img src="./src/img/icons/11.svg" alt="Icons" />
+            <span class="condition__status--value">Slightly Cloudy</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
