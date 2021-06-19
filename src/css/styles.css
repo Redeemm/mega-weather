@@ -87,7 +87,7 @@ input:focus {
     .condition__status--value {
       font-size: 3rem; }
   .condition__temp--value {
-    font: 500 45rem "Bespoke Stencil", san-serif;
+    font: 500 35rem "Bespoke Stencil", san-serif;
     position: relative; }
     .condition__temp--value::after {
       content: "";
@@ -107,7 +107,8 @@ input:focus {
     border: 1px solid #fff;
     width: 100%;
     display: grid;
-    grid-template-rows: 30% 70%; }
+    grid-template-rows: 30% 70%;
+    padding: 1.5rem 0; }
     .forecast__day--date {
       display: flex;
       justify-content: center;

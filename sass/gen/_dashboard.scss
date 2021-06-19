@@ -39,7 +39,7 @@
 
   &__temp {
     &--value {
-      font: 500 45rem "Bespoke Stencil", san-serif;
+      font: 500 35rem "Bespoke Stencil", san-serif;
       position: relative;
 
       &::after {
@@ -66,6 +66,7 @@
     width: 100%;
     display: grid;
     grid-template-rows: 30% 70%;
+    padding: 1.5rem 0;
 
     &--date {
       display: flex;
