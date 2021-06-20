@@ -19,7 +19,7 @@ class forecast {
         this.fetchDailyForecast(data.coord.lat, data.coord.lon);
       })
       .catch((err) => {
-        alert("No Internet Connection");
+        // alert("No Internet Connection");
         console.log(err);
       });
 
@@ -40,7 +40,7 @@ class forecast {
         this.updateDailyForecast(data);
       })
       .catch((err) => {
-        alert("No internet Connect");
+        // alert("No internet Connect");
         console.log(err);
       });
 
