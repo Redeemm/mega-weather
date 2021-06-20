@@ -1,46 +1,46 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  min-height: 100vh;
-  width: 100%;
-  font: 300 1.8rem "Pally", sans-serif;
-  color: #fff;
-  background: url("../img/background.jpg") no-repeat;
-  background-size: cover;
-  overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    font: 300 1.8rem "Pally", sans-serif;
+    color: #fff;
+    background: url("../img/background.jpg") no-repeat;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    overflow: hidden;
 }
 
 input {
-  &:focus {
-    outline: none;
-  }
+    &:focus {
+        outline: none;
+    }
 }
 
 .app {
-  display: grid;
-  grid-template-rows: 10vh 90vh;
-
-  &-holder {
     display: grid;
-    grid-template-rows: 55vh 10vh 25vh;
-  }
-
-  &-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15rem;
-  }
+    grid-template-rows: 10vh 90vh;
+    &-holder {
+        display: grid;
+        grid-template-rows: 55vh 10vh 25vh;
+    }
+    &-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15rem;
+    }
 }
 
 .hide {
-  display: none;
+    display: none;
 }
