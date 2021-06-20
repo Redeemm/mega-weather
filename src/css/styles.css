@@ -92,12 +92,13 @@ input:focus {
     .condition__temp--value::after {
       content: "";
       position: absolute;
-      top: 30%;
-      right: -14%;
+      top: 0;
+      right: 0;
       width: 5rem;
       height: 5rem;
       border: 2rem solid #fff;
-      border-radius: 50%; }
+      border-radius: 50%;
+      transform: translate(100%, 120%); }
 
 .forecast {
   width: 100%;
