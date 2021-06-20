@@ -84,8 +84,24 @@
     }
 }
 
-@media screen and (max-width:700px) {
-    .city {
+@media only screen and (max-width:700px) {
+    .body {
         width: 100%;
+        background: url("../img/background.jpg") no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: auto;
+    }
+    .app {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .search {
+        width: 100%;
+        display: inline-flex;
     }
 }
