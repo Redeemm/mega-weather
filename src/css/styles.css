@@ -13,11 +13,12 @@ body {
   width: 100%;
   font: 300 1.8rem "Pally", sans-serif;
   color: #fff;
-  background: url("../img/background.jpg") no-repeat;
+  background: url("../../src/img/b1.jpg") no-repeat;
   top: 0;
   left: 0;
   background-size: cover;
   overflow: hidden;
+  animation: slides 20s infinite;
 }
 
 input:focus {
@@ -43,6 +44,50 @@ input:focus {
   display: none;
 }
 
+@keyframes slides {
+  0% {
+    background: url("../../src/img/b1.jpg");
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+  10% {
+    background: url("../../src/img/b1.jpg");
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+  20% {
+    background: url("../../src/img/b2.jpg");
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+  40% {
+    background: url("../../src/img/b2.jpg");
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+  60% {
+    background: url("../../src/img/b3.jpg");
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+  80% {
+    background: url("../../src/img/b3.jpg");
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+  100% {
+    background: url("../../src/img/b1.jpg");
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+}
 .others {
   width: 100%;
   display: flex;
@@ -159,9 +204,27 @@ input:focus {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 700px) {
-  .city {
+@media only screen and (max-width: 700px) {
+  .body {
     width: 100%;
+    background: url("../img/background.jpg") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: auto;
+  }
+
+  .app {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+    flex-basis: 100%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .search {
+    width: 100%;
+    display: inline-flex;
   }
 }
 
