@@ -51,14 +51,8 @@ input:focus {
     left: 0;
     background-size: cover;
   }
-  10% {
-    background: url("../../src/img/b1.jpg");
-    top: 0;
-    left: 0;
-    background-size: cover;
-  }
   20% {
-    background: url("../../src/img/b2.jpg");
+    background: url("../../src/img/b1.jpg");
     top: 0;
     left: 0;
     background-size: cover;
@@ -70,12 +64,18 @@ input:focus {
     background-size: cover;
   }
   60% {
-    background: url("../../src/img/b3.jpg");
+    background: url("../../src/img/b2.jpg");
     top: 0;
     left: 0;
     background-size: cover;
   }
   80% {
+    background: url("../../src/img/b3.jpg");
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+  90% {
     background: url("../../src/img/b3.jpg");
     top: 0;
     left: 0;

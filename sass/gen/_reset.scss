@@ -51,42 +51,42 @@ input {
         background: url("../../src/img/b1.jpg");
         top: 0;
         left: 0;
-        background-size: cover
+        background-size: cover;
     }
-    10% {
+    20% {
         background: url("../../src/img/b1.jpg");
         top: 0;
         left: 0;
-        background-size: cover
-    }
-    20% {
-        background: url("../../src/img/b2.jpg");
-        top: 0;
-        left: 0;
-        background-size: cover
+        background-size: cover;
     }
     40% {
         background: url("../../src/img/b2.jpg");
         top: 0;
         left: 0;
-        background-size: cover
+        background-size: cover;
     }
     60% {
-        background: url("../../src/img/b3.jpg");
+        background: url("../../src/img/b2.jpg");
         top: 0;
         left: 0;
-        background-size: cover
+        background-size: cover;
     }
     80% {
         background: url("../../src/img/b3.jpg");
         top: 0;
         left: 0;
-        background-size: cover
+        background-size: cover;
+    }
+    90% {
+        background: url("../../src/img/b3.jpg");
+        top: 0;
+        left: 0;
+        background-size: cover;
     }
     100% {
         background: url("../../src/img/b1.jpg");
         top: 0;
         left: 0;
-        background-size: cover
+        background-size: cover;
     }
 }
