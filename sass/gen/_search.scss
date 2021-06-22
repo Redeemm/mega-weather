@@ -1,21 +1,22 @@
 .form {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 200;
-  width: 75%;
-
-  &__title {
-    font: 500 3rem "Bespoke Stencil", san-serif;
-  }
-
-  input {
-    width: 50%;
-    border-radius: 5rem;
-    color: #333;
-    border: 1px solid transparent;
-    padding: 2rem 5rem;
-    font-size: 1.6rem;
-    font-weight: 300;
-  }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 200;
+    width: 100%;
+    &__title {
+        font: 500 3rem "Bespoke Stencil", san-serif;
+        margin-left: -8%;
+    }
+    input {
+        width: 42%;
+        border-radius: 5rem;
+        color: #333;
+        border: 1px solid transparent;
+        transform: translateX(-14%);
+        margin-inline: 10%;
+        padding: 2rem 5rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
 }

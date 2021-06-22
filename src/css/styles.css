@@ -104,21 +104,73 @@ input:focus {
   color: #f74242;
 }
 
+@media screen and (max-width: 600px) {
+  .app-holder {
+    width: 53%;
+    position: absolute;
+  }
+
+  .forecast__day--date {
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    font-size: small;
+  }
+
+  .app {
+    position: absolute;
+  }
+
+  .form {
+    position: absolute;
+    width: 100%;
+    transform: translateX(100%);
+    display: flexbox;
+    flex-direction: column-reverse;
+  }
+  .form__title {
+    overflow: hidden;
+    display: none;
+  }
+  .form__search {
+    padding: 100%;
+    transform: translateX(50%);
+    width: 100%;
+  }
+
+  .forecast {
+    width: 100%;
+    bottom: 0;
+    padding-left: 4%;
+    position: relative;
+    grid-template-columns: repeat(1, 5fr);
+    margin-bottom: 5px;
+    margin-top: 10px;
+    flex-direction: row-reverse;
+  }
+}
 .form {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   z-index: 200;
-  width: 75%;
+  width: 100%;
 }
 .form__title {
   font: 500 3rem "Bespoke Stencil", san-serif;
+  margin-left: -8%;
 }
 .form input {
-  width: 50%;
+  width: 42%;
   border-radius: 5rem;
   color: #333;
   border: 1px solid transparent;
+  transform: translateX(-14%);
+  margin-inline: 10%;
   padding: 2rem 5rem;
   font-size: 1.6rem;
   font-weight: 300;
@@ -135,13 +187,13 @@ input:focus {
 }
 @keyframes move {
   0% {
-    left: 0px;
+    left: 0rem;
   }
   50% {
-    left: 100px;
+    left: 5rem;
   }
   100% {
-    left: 0px;
+    left: 0rem;
   }
 }
 .city__date--value {

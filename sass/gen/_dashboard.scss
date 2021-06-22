@@ -10,13 +10,13 @@
     }
     @keyframes move {
         0% {
-            left: 0px;
+            left: 0rem;
         }
         50% {
-            left: 100px;
+            left: 5rem;
         }
         100% {
-            left: 0px;
+            left: 0rem;
         }
     }
     &__date {
